@@ -1,0 +1,113 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #CCCCFF;
+    color: #1a1a1a;           
+    margin: 20px;
+    padding: 10px;
+}
+
+.barra-navegacion {
+    background-color: #99CCFF;
+    padding: 10px;
+}
+
+.enlaces-menu {
+    list-style-type: none;
+}
+
+h1 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #0055a5;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #222222;
+}
+
+nav ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+nav a {
+    color: #0044cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #CCCCFF;
+}
+
+table, th, td {
+    border: 1px solid #CCCCFF;
+}
+
+th {
+    background-color: #CCCCFF;
+    color: #ffffff;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    padding: 8px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0055a5;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555555;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
