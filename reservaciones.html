@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Reservaciones - Honduras Ecoturismo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="barra-navegacion">
+            <a href="index.html" class="logo">🇭🇳 Honduras Ecoturismo</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos y Rutas</a></li>
+                <li><a href="cultura.html">Cultura y Gastronomía</a></li>
+                <li><a href="reservaciones.html" class="active">Reservaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h1>Solicitud de Paquetes y Excursiones Guiadas</h1>
+            <p>Complete el siguiente formulario formal de atención al turista para tramitar su itinerario personalizado en el territorio nacional.</p>
+            
+              <form method="POST" enctype="multipart/form-data">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo del Viajero*</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Patricia Blandin">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número Telefónico de Contacto *</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ej. +504 9900-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico Oficial *</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="circuito">Selección del Circuito Turístico o Destino Deseado *</label>
+                    <select id="circuito" name="circuito" required>
+                        <option value="" disabled selected>-- Seleccione una opción --</option>
+                        <option value="ruta_maya">Ruta Maya y Arqueología (Copán)</option>
+                        <option value="ruta_lenca">Ruta Lenca y Pueblos con Encanto (Gracias / Intibucá)</option>
+                        <option value="ecoturismo">Ecoturismo y Bosques Nublados (Celaque / Pico Bonito)</option>
+                        <option value="caribe">Caribe y Arrecifes (Islas de la Bahía / Tela)</option>
+                    </select>
+                </div>
+
+                    <div class="form-group">
+                        <label for="fecha_inicio">Fecha Prevista de Inicio *</label>
+                        <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_retorno">Fecha Prevista de Retorno *</label>
+                        <input type="date" id="fecha_retorno" name="fecha_retorno" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adultos">Número de Visitantes (Adultos) *</label>
+                        <input type="number" id="adultos" name="adultos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="menores">Número de Visitantes (Menores de edad)</label>
+                        <input type="number" id="menores" name="menores" required>
+                    </div>
+
+                <div class="form-group">
+                    <label for="hospedaje">Nivel de Servicio / Tipo de Hospedaje Requerido *</label>
+                    <select id="hospedaje" name="hospedaje" required>
+                        <option value="" disabled selected>-- Seleccione tipo de alojamiento --</option>
+                        <option value="cabana">Cabaña Ecológica en Reserva Natural</option>
+                        <option value="colonial">Hotel Colonial Histórico</option>
+                        <option value="campamento">Campamento de Montaña / Eco-lodge</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="asistencia">Necesidades de Accesibilidad o Guía Bilingüe</label>
+                    <textarea id="asistencia" name="asistencia" rows="3" placeholder="Indique requerimientos especiales de movilidad, restricciones alimenticias o solicitud de guía en inglés u otro idioma..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="compromiso" name="compromiso" required>
+                    <label for="compromiso">Confirmo que he leído y acepto los términos de servicio, políticas de cancelación y condiciones de seguridad turística.</label>
+                </div>
+
+                <button type="submit">Enviar Solicitud de Reservación</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Iniciativa de Promoción Turística de Honduras. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
