@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Asistencia al Turista - Honduras</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="barra-navegacion">
+            <a href="index.html" class="logo">🇭🇳 Honduras Ecoturismo</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos y Rutas</a></li>
+                <li><a href="cultura.html">Cultura y Gastronomía</a></li>
+                <li><a href="reservaciones.html">Reservaciones</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h1>Oficinas de Información y Asistencia al Turista</h1>
+            <p>Nos encontramos a su disposición para brindarle orientación especializada, asistencia vial y apoyo durante su recorrido por el país.</p>
+            
+            <div class="grid-3">
+                <div>
+                    <h3> Tegucigalpa (Oficina Central)</h3>
+                    <p>Boulevard Morazán, Edificio Torre Turística, Piso 3.</p>
+                    <p><strong>Teléfono Emergencia Vial:</strong> +504 3213-6541 </p>
+                </div>
+                <div>
+                    <h3> San Pedro Sula y Litoral</h3>
+                    <p>Avenida Circunvalación, Centro Comercial Plaza del Sol.</p>
+                    <p><strong>Línea de Asistencia Turística:</strong> 143 (Línea Nacional)</p>
+                </div>
+                <div>
+                    <h3>Canales Digitales Oficiales</h3>
+                    <p><strong>Correo Electrónico:</strong> asistencia@hondurasecoturismo.gob.hn</p>
+                    <p>Redes Sociales Institucionales: @HondurasTurismo</p>
+                </div>
+            </div>
+
+              <img src="imagenes/oficina.png" alt="Honduras-Ecoturismo"  width="800" height="400">
+                Espacio para Mapa Esquemático o Ubicación Geográfica de Oficinas
+            </div>
+        </section>
+
+        <section>
+            <h2>Formulario Secundario de Consultas Generales y Asistencia Ciudadana</h2>
+            <p>Si tiene dudas específicas sobre carreteras, clima o requiere soporte ciudadano, envíenos un mensaje.</p>
+            
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nombre_contacto">Nombre Completo *</label>
+                    <input type="text" id="nombre_contacto" name="nombre_contacto" required placeholder="Su nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo_contacto">Correo Electrónico *</label>
+                    <input type="email" id="correo_contacto" name="correo_contacto" required placeholder="correo@dominio.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto de la Consulta *</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="" disabled selected>-- Seleccione categoría --</option>
+                        <option value="estado_carreteras">Estado de Carreteras</option>
+                        <option value="seguridad">Seguridad Turística</option>
+                        <option value="informacion_general">Información General de Destinos</option>
+                        <option value="otro">Otro tipo de consulta</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje o Detalle de la Solicitud *</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escriba su consulta o comentario aquí..."></textarea>
+                </div>
+
+                <button type="submit">Enviar Consulta</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Iniciativa de Promoción Turística de Honduras. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
